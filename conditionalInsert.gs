@@ -30,8 +30,6 @@ function ConditionalInsert()
         
         // re-index the new row
         var newNodeID = nodeID + "_" + j;
-        var range = sheet.getRange(i, 51 + j);  // set range
-        var nameAgency = range.getValues();  // get the content
         sheet.getRange(i + j, 3).setValue(newNodeID);  // set the content
         sheet.getRange(i + j, 50).setValue(newNodeID);  // set the content 
       }
